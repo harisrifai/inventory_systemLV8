@@ -19,7 +19,7 @@
                 	<div class="loginbox">
 
                     	<div class="login-left">
-							<img class="img-fluid" src="admin/assets/img/logo-white.png" alt="Logo">
+							<img class="img-fluid" src="admin/assets/img/logo-new.png" alt="Logo">
                         </div>
                         <div class="login-right">
 							<div class="login-right-wrap">
@@ -40,7 +40,7 @@
 										<button class="btn btn-primary btn-block" type="submit">Login</button>
 									</div>
 								</form>
-								<!-- /Form -->
+								<!-- /Form  
 
 								<div class="text-center forgotpass"><a href="forgot-password.html">Forgot Password?</a></div>
 								<div class="login-or">
@@ -48,14 +48,14 @@
 									<span class="span-or">or</span>
 								</div>
 
-								<!-- Social Login -->
+								 
 								<div class="social-login">
 									<span>Login with</span>
 									<a href="#" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" class="google"><i class="fa fa-google"></i></a>
 								</div>
-								<!-- /Social Login -->
+								 
 
-								<div class="text-center dont-have">Don’t have an account? <a href="{{ route('register') }}">Register</a></div>
+								<div class="text-center dont-have">Don’t have an account? <a href="{{ route('register') }}">Register</a></div>  -->
 							</div>
                         </div>
                     </div>

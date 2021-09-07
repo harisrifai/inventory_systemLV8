@@ -18,7 +18,13 @@
                             <div class="card-body">
                                 <form action="{{ route('customer.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
-                                    <div class="form-group">
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">  <div class="form-group">
                                         <label>Name</label>
                                         <input name="name" type="text" class="form-control" placeholder="Name" >
                                     </div>
@@ -37,15 +43,32 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Shope Name</label>
+                                        <label>Shop Name</label>
                                         <input name="shope_name" type="text" class="form-control" placeholder="Shope Name" >
                                     </div>
+                                    
+
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input name="city" type="text" class="form-control" placeholder="City">
+                                    </div>
+            </h5>
+        <p class="card-text"> </p>
+       
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+            
                                     <div class="form-group">
                                         <label>Account Holder</label>
                                         <input name="account_holder" type="text" class="form-control" placeholder="Account Holder" >
                                     </div>
                                     <div class="form-group">
-                                        <label>Accoutnt Number</label>
+                                        <label>Account Number</label>
                                         <input name="account_number" type="text" class="form-control" placeholder="Account Number">
                                     </div>
 
@@ -59,10 +82,6 @@
                                         <input name="bank_branch" type="text" class="form-control" placeholder="Back Branch">
                                     </div>
 
-                                    <div class="form-group">
-                                        <label>City</label>
-                                        <input name="city" type="text" class="form-control" placeholder="City">
-                                    </div>
 
                                     <div class="form-group">
 
@@ -71,9 +90,23 @@
                                         <input type="file" class="" name="photo" accept="image/*" class="upload" onchange="readURL(this);">
                                     </div>
 
+        </h5>
+        <p class="card-text"> </p>
                                     <div class="text-right">
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                                  
+
+                                    
+
+                                    
+
+                                    
                                 </form>
                             </div>
                         </div>

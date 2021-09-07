@@ -18,6 +18,14 @@
                             <div class="card-body">
                                 <form action="{{ route('supplier.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
+                                    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+         
+
+
+
                                     <div class="form-group">
                                         <label>Name</label>
                                         <input name="name" type="text" class="form-control" placeholder="Name" >
@@ -40,6 +48,18 @@
                                         <label>Shope Name</label>
                                         <input name="shope_name" type="text" class="form-control" placeholder="Shope Name" >
                                     </div>
+
+                                     
+        <p class="card-text"> </p>
+       
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+
                                     <div class="form-group">
                                         <label>Account Holder</label>
                                         <input name="account_holder" type="text" class="form-control" placeholder="Account Holder" >

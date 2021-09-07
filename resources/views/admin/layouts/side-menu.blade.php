@@ -14,9 +14,11 @@
                 </li>
 
                 <li class="">
-                    <a href="{{ route('pos') }}"><i class="fa fa-home"></i> <span>POS</span></a>
+                    <a href="{{ route('pos') }}"><i class="fa fa-cart-plus"></i> <span>POS</span></a>
                 </li>
 
+                    <!-- Sidebar 
+ -->
                {{-- <li class="">
                     <a href="index.html"><i class="fa fa-plus"></i> <span>Post</span></a>
                 </li>
@@ -31,17 +33,16 @@
 
 
                 <li class="">
-                    <a href="index.html"><i class="fe fe-users"></i> <span>Users</span></a>
+                    <a href="index.html"><i class="fa-user-circle-o"></i> <span>Users</span></a>
                 </li> --}}
 
 
 
-
                 <li class="submenu">
-                    <a href="#"><i class="fe fe-users"></i> <span>Employees</span> <span class="menu-arrow"></span></a>
+                    <a href="#"><i class="fa fa-user-circle-o"></i> <span>Employees</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('show.employee') }}">All Employees</a></li>
-                        <li><a href="{{ route('add.employee') }}">Add Employee</a></li>
+                        {{--<li><a href="{{ route('add.employee') }}">Add Employee</a></li>--}}
 
                     </ul>
                 </li>
@@ -50,7 +51,7 @@
                     <a href="#"><i class="fe fe-users"></i> <span>Customer</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('customer.index') }}">All Customers</a></li>
-                        <li><a href="{{ route('customer.create') }}">Add Customer</a></li>
+                     {{--   <li><a href="{{ route('customer.create') }}">Add Customer</a></li> --}}
 
                     </ul>
                 </li>
@@ -59,27 +60,28 @@
                     <a href="#"><i class="fa fa-list-alt"></i> <span>Supplier</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('supplier.index') }}">All Suppiers</a></li>
-                        <li><a href="{{ route('supplier.create') }}">Add Supplier</a></li>
+                        {{--   <li><a href="{{ route('supplier.create') }}">Add Supplier</a></li> --}}
 
                     </ul>
                 </li>
 
+                {{--
                 <li class="submenu">
                     <a href="#"><i class="fa fa-list-alt"></i> <span>Salary (EMP)</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('salary.index') }}">All Salary</a></li>
-                        <li><a href="{{ route('salary.create') }}">Add Advance Salary</a></li>
+                        <li><a href="{{ route('salary.create') }}">Add Advance Salary</a></li>  
                         <li><a href="{{ route('pay_salary.index') }}">Pay Salary</a></li>
                         <li><a href="">Last Month Salary</a></li>
 
                     </ul>
-                </li>
+                </li> --}}
 
                 <li class="submenu">
                     <a href="#"><i class="fa fa-list-alt"></i> <span>Category</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('category.index') }}">All Categories</a></li>
-                        <li><a href="{{ route('category.create') }}">Add Category</a></li>
+                        {{--  <li><a href="{{ route('category.create') }}">Add Category</a></li> --}}
 
                     </ul>
                 </li>
@@ -88,7 +90,7 @@
                     <a href="#"><i class="fa fa-list-alt"></i> <span>Product</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('product.index') }}">All Product</a></li>
-                        <li><a href="{{ route('product.create') }}">Add Product</a></li>
+                        {{--   <li><a href="{{ route('product.create') }}">Add Product</a></li> --}}
                         <li><a href="{{ route('import.product') }}">Import Product</a></li>
 
                     </ul>
@@ -107,7 +109,7 @@
                 </li>
 
                 <li class="submenu">
-                    <a href="#"><i class="fa fa-list-alt"></i> <span>Orders</span> <span class="menu-arrow"></span></a>
+                    <a href="#"><i class="fa fa-credit-card"></i> <span>Orders</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
 
                         <li><a href="{{ route('pending.order') }}">Pending Orders</a></li>
@@ -117,7 +119,7 @@
 
                     </ul>
                 </li>
-
+{{-- 
 
                 <li class="submenu">
                     <a href="#"><i class="fa fa-list-alt"></i> <span>Sales Report</span> <span class="menu-arrow"></span></a>
@@ -140,12 +142,15 @@
 
                     </ul>
                 </li>
-
+                --}}
 
                 <li>
                     <a href="{{ route('setting.create') }}"><i class="fe fe-vector"></i> <span>Settings</span></a>
                 </li>
 
+                <li>
+                      <span>..::<i class="fe fe-gear"></i>about us::..</span> 
+                </li>
 
             </ul>
         </div>

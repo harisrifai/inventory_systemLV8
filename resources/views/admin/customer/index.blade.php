@@ -10,8 +10,9 @@
                 <div class="card">
                     @include('validate')
                     <div class="card-header">
-                        <h4 class="card-title">All Employees</h4>
-
+                        
+                        
+                        <h2 class="card-title">All Customer<a href="{{ route('customer.create') }}"> <button class="btn btn-success"><i class="fe fe-user"></i>Add Customer</button></a> </h2>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">

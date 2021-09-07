@@ -32,7 +32,7 @@
 									</div>
 								</div>
 								<div class="dash-widget-info">
-									<h6 class="text-muted">Doctors</h6>
+									<h6 class="text-muted">Product</h6>
 									<div class="progress progress-sm">
 										<div class="progress-bar bg-primary w-50"></div>
 									</div>
@@ -53,7 +53,7 @@
 								</div>
 								<div class="dash-widget-info">
 
-									<h6 class="text-muted">Patients</h6>
+									<h6 class="text-muted">Customer</h6>
 									<div class="progress progress-sm">
 										<div class="progress-bar bg-success w-50"></div>
 									</div>
@@ -74,7 +74,7 @@
 								</div>
 								<div class="dash-widget-info">
 
-									<h6 class="text-muted">Appointment</h6>
+									<h6 class="text-muted">Sales</h6>
 									<div class="progress progress-sm">
 										<div class="progress-bar bg-danger w-50"></div>
 									</div>

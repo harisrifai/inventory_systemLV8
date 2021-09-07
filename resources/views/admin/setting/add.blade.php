@@ -19,6 +19,13 @@
                                 <form action="{{ route('setting.update', $setting -> id) }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     @method('PUT')
+
+                                    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+
                                     <div class="form-group">
                                         <label>Company Name</label>
                                         <input name="company_name" type="text" class="form-control" placeholder="Company Name" value="{{ $setting -> company_name }}">
@@ -40,6 +47,18 @@
                                         <label>Company County</label>
                                         <input name="company_country" type="text" class="form-control" placeholder="Company Country" value="{{ $setting -> company_country }}">
                                     </div>
+
+                                    </h5>
+        <p class="card-text"> </p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
                                     <div class="form-group">
                                         <label>Company Zipcode</label>
                                         <input name="company_zipcode" type="text" class="form-control" placeholder="Company Zipcode" value="{{ $setting -> company_zipcode }}">
@@ -75,6 +94,14 @@
                                     <div class="text-right">
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
+        </h5>
+        <p class="card-text">*Please setup carefully about your Company detail.</p>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
                                 </form>
                             </div>
                         </div>

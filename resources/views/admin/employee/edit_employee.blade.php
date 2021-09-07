@@ -13,7 +13,7 @@
                         @include('validate')
                         <div class="card pl-3 pr-3">
                             <div class="card-header">
-                                <h4 class="card-title text-primary">Update {{ ($all_data -> name) }}'s Information</h4>
+                                <h4 class="card-title text-primary"> <i class="fe fe-user"></i> Update   {{ ($all_data -> name) }}'s Information</h4>
                             </div>
                             <div class="card-body">
                                 <form action="{{ route('update.employee',$all_data -> id ) }}" method="POST" enctype="multipart/form-data">
@@ -21,8 +21,18 @@
                                 @method('put')
 
                                     <div class="form-group">
-                                        <label>Name</label>
-                                        <input name="name" type="text" class="form-control" value="{{ ($all_data -> name) }}">
+
+                                    <div class="row">
+
+
+
+  <div class="col-sm-6">
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body">
+        <h5 class="card-title">    
+                                 <div class="form-group">
+                                        <label  for="name">Name :
+                                        <input name="name" type="text" class="form-control" value="{{ ($all_data -> name) }}"></label>
                                     </div>
                                     <div class="form-group">
                                         <label>E-mail</label>
@@ -31,25 +41,13 @@
                                     <div class="form-group">
                                         <label>Phone</label>
                                         <input name="phone" type="text" class="form-control" placeholder="Phone" value="{{ ($all_data -> phone) }}">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Exprience</label>
-                                        <input name="exprience" type="text" class="form-control" placeholder="Exprience" value="{{ ($all_data -> exprience) }}">
-                                    </div>
+                                                                      
+                                    
                                     <div class="form-group">
                                         <label>Address</label>
                                         <input name="address" type="text" class="form-control" placeholder="Address" value="{{ ($all_data -> address) }}">
                                     </div>
-                                    <div class="form-group">
-                                        <label>NID NO</label>
-                                        <input name="nid_no" type="text" class="form-control" placeholder="National ID Number" value="{{ ($all_data -> nid_no) }}">
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        <label>Salary</label>
-                                        <input name="salary" type="text" class="form-control" placeholder="Salary" value="{{ ($all_data -> salary) }}">
-                                    </div>
+                                    
 
                                     <div class="form-group">
                                         <label>Vacation</label>
@@ -61,28 +59,65 @@
                                         <input name="city" type="text" class="form-control" placeholder="City" value="{{ ($all_data -> city) }}">
                                     </div>
 
+
+                                    
+                                
+        </h5>
+        <p class="card-text">* any warning is needing to supply text</p>
+         
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body">
+        <h5 class="card-title">
+                                    <div class="form-group">
+                                        <label>ID NO</label>
+                                        <input name="nid_no" type="text" class="form-control" placeholder="National ID Number" value="{{ ($all_data -> nid_no) }}">
+                                    </div>
+
+                                     
+
+                                    <div class="form-group">
+                                        <label>Exprience</label>
+                                        <input name="exprience" type="text" class="form-control" placeholder="Exprience" value="{{ ($all_data -> exprience) }}">
+                                    </div>   
+
+
+                                    <div class="form-group">
+                                        <label>Salary</label>
+                                        <input name="salary" type="text" class="form-control" placeholder="Salary" value="{{ ($all_data -> salary) }}">
+                                    </div>
+
+
                                     <div class="form-group">
 
-                                            @if( !empty($all_data -> photo) )
-                                            <img style="height: 100px; width: 100px;" src="{{ URL::to('/') }}/media/employee_photos/{{ $all_data -> photo }}" alt="">
-                                            @endif <br>
+                                        @if( !empty($all_data -> photo) )
+                                        <img style="height: 100px; width: 100px;" src="{{ URL::to('/') }}/media/employee_photos/{{ $all_data -> photo }}" alt="">
+                                        @endif <br>
 
-                                            <input type="hidden" name="old_picture" value="{{ $all_data -> photo }}">
+                                        <input type="hidden" name="old_picture" value="{{ $all_data -> photo }}">
 
 
                                         <img class="" id="image" src="#"><label>Photo</label>
                                         <br>
-
-
-
-
-
                                         <input type="file" name="new_picture" accept="image/*" class="upload" onchange="readURL(this);">
-                                    </div>
+                                    </div>  
 
-                                    <div class="text-right">
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="text-right"> 
                                         <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div></p>
+         
                                     </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                </div></div>
+                                 
                                 </form>
                             </div>
                         </div>

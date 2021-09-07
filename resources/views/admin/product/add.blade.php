@@ -23,6 +23,15 @@
                             <div class="card-body">
                                 <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
+
+ <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+
+
+
                                     <div class="form-group">
                                         <label>Product Name</label>
                                         <input name="product_name" type="text" class="form-control" placeholder="Product Name" >
@@ -57,6 +66,19 @@
                                         <label>Godaun</label>
                                         <input name="product_garage" type="text" class="form-control" placeholder="Godaun Number" >
                                     </div>
+
+                        <p class="card-text"> </p>
+       
+                    </div>
+                    </div>
+                </div>
+
+
+   <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+
 
                                     <div class="form-group">
                                         <label>Product Route</label>

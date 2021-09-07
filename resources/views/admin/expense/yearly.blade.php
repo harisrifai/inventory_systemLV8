@@ -77,7 +77,7 @@
                         $expense = DB::table('expenses') -> where('year', $year) -> sum('amount');
                     @endphp
                   @if( !empty( $expense))
-                  <p class="text-center text-danger" style="font-size: 24px;"><strong>Total : </strong> {{ $expense  }} <strong> Taka</strong></</p>
+                  <p class="text-center text-danger" style="font-size: 24px;"><strong>Total : </strong> {{ $expense  }} </</p>
                   @endif
                     </div>
                 </div>

@@ -107,7 +107,7 @@
                           </tr> --}}
                           <tr>
                           <td class="left">
-                           <strong>VAT (21%)</strong>
+                           <strong>VAT (10%)</strong>
                           </td>
                           <td class="right">{{ Cart::tax() }}</td>
                           </tr>

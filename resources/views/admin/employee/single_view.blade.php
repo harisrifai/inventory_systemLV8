@@ -7,13 +7,13 @@
 			<div class="content container-fluid">
 
 
-                <div class="card">
+                <div class="card border-info mb-3">
                     @include('validate')
                     <div class="card-header">
                         <h4 class="card-title">{{ $all_data -> name }}</h4>
 
                     </div>
-                    <div class="card-body">
+                    <div class="card-body text-info">
                         <div class="table-responsive">
                             <table id="data-table-data" class="table table-striped mb-0">
 

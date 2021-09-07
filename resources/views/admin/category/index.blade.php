@@ -10,8 +10,8 @@
                 <div class="card">
                     @include('validate')
                     <div class="card-header">
-                        <h4 class="card-title">All Categories</h4>
-
+                       
+                        <h2 class="card-title">All Categories<a href="{{ route('category.create') }}"> <button class="btn btn-success"><i class="fe fe-user"></i>Add Categories</button></a> </h2>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -42,9 +42,9 @@
 
                                         <td>
 
-                                            <a class=" btn btn-primary btn-sm" href="">View</a>
+                                             
 
-                                            <a class=" btn btn-warning btn-sm" href="">Edit</a>
+                                             
 
                                             <form style="display: inline;" action="" method="POST">
 

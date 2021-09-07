@@ -91,11 +91,11 @@
                             <div class=" pricing-footer bg-info text-white">
                                 <div style="border: 2px solid grey">
                                   <div class=" bg-secondary p-2">
-                                    <p style="font-size: 20px;" class="mt-2"><strong>Quentity: {{ Cart::count() }}</strong></p>
+                                    <p style="font-size: 20px;" class="mt-2"><strong>QTY : {{ Cart::count() }}</strong></p>
                                     <hr>
                                     <p style="font-size: 20px;"><strong>Sub Total: {{ Cart::subtotal() }}</strong></p>
                                     <hr>
-                                    <p style="font-size: 20px;"><strong>Vat: {{ Cart::tax() }}</strong></p>
+                                    <p style="font-size: 20px;"><strong>PPN: {{ Cart::tax() }}</strong></p>
                                   </div>
 
 
